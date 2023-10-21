@@ -1,0 +1,22 @@
+{
+  "name": "user-auth",
+  "version": "1.0.0",
+  "description": "userAuth is a TypeScript class for user authentication that includes secure password hashing and verification.",
+  "main": "userAuth.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightrunner4/user-auth.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nightrunner4/user-auth/issues"
+  },
+  "homepage": "https://github.com/nightrunner4/user-auth#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
+}

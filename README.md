@@ -15,8 +15,8 @@ This repository contains a TypeScript class for user authentication that include
 
 ### Usage 🖊️
 
-1. Install the required libraries:
+1. Install bcrypt (specified in package.json):
 
    ```bash
-   npm install bcrypt
+   npm install
    ```

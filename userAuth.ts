@@ -1,3 +1,5 @@
+import * as bcrypt from "bcrypt";
+
 class User {
   constructor(public username: string, public password: string) {}
 }
@@ -15,6 +17,12 @@ class userAuth {
     const user = new User(username, hashedPassword);
     this.users.push(user);
     return "Registration successful. You can now log in.";
+  }
+
+  // Hash a password
+  async hashPassword(password: string): Promise<string> {
+    const saltRounds = 10;
+    return await bcrypt.hash(password, saltRounds);
   }
 }
 

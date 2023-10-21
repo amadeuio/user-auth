@@ -29,9 +29,12 @@ class userAuth {
 // Example usage:
 const users = new userAuth();
 
-(async () => {
-  await console.log(users.registerUser("user1", "password1"));
+// Register a user and log users list
+users.registerUser("user1", "password1").then(() => {
   console.log(users);
-})();
+});
+
+// Hash example password and log result
+users.hashPassword("examplePass").then((result) => console.log(result));
 
 export {};

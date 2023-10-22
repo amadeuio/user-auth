@@ -13,7 +13,7 @@ class userAuth {
 
   // Register a new user with a hashed password
   async registerUser(username: string, password: string): Promise<string> {
-    const hashedPassword = password; // Temporary
+    const hashedPassword: string = await this.hashPassword(password);
     const user = new User(username, hashedPassword);
     this.users.push(user);
     return "Registration successful. You can now log in.";
@@ -33,8 +33,5 @@ const users = new userAuth();
 users.registerUser("user1", "password1").then(() => {
   console.log(users);
 });
-
-// Hash example password and log result
-users.hashPassword("examplePass").then((result) => console.log(result));
 
 export {};

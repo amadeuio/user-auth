@@ -11,6 +11,12 @@ class userAuth {
     this.users = [];
   }
 
+  // Hash a password
+  async hashPassword(password: string): Promise<string> {
+    const saltRounds = 10;
+    return await bcrypt.hash(password, saltRounds);
+  }
+
   // Register a new user with a hashed password
   async registerUser(username: string, password: string): Promise<void> {
     const hashedPassword: string = await this.hashPassword(password);
@@ -18,19 +24,16 @@ class userAuth {
     this.users.push(user);
   }
 
-  // Hash a password
-  async hashPassword(password: string): Promise<string> {
-    const saltRounds = 10;
-    return await bcrypt.hash(password, saltRounds);
-  }
+  // Authenticate user
+  // method here ...
 }
 
 // Example usage:
-const users = new userAuth();
+const userList = new userAuth();
 
 // Register a user and log users list
-users.registerUser("user1", "password1").then(() => {
-  console.log(users);
+userList.registerUser("user1", "password1").then(() => {
+  console.log(userList);
 });
 
 export {};

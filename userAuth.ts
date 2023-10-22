@@ -12,11 +12,10 @@ class userAuth {
   }
 
   // Register a new user with a hashed password
-  async registerUser(username: string, password: string): Promise<string> {
+  async registerUser(username: string, password: string): Promise<void> {
     const hashedPassword: string = await this.hashPassword(password);
     const user = new User(username, hashedPassword);
     this.users.push(user);
-    return "Registration successful. You can now log in.";
   }
 
   // Hash a password

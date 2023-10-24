@@ -24,9 +24,16 @@ class userAuth {
     this.users.push(user);
   }
 
+  // Verify a password
+  async verifyPassword(password: string, hashedPassword: string): Promise<boolean> {
+    return await bcrypt.compare(password, hashedPassword);
+  }
+
   // Authenticate user
   // method here ...
 }
+
+
 
 // Example usage:
 const userList = new userAuth();
@@ -35,5 +42,10 @@ const userList = new userAuth();
 userList.registerUser("user1", "password1").then(() => {
   console.log(userList);
 });
+
+// Verify password example 
+userList.verifyPassword('password1','$2b$10$43Md3Ke5RCnGrdJkjylNBeIA8mq3L/gvhqJgNMu8tiklfffLazi2O').then((result) => {
+  console.log(result);
+})
 
 export {};

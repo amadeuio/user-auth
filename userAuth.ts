@@ -53,12 +53,21 @@ class userAuth {
 }
 
 // Example usage:
+
 const userList = new userAuth();
 
-userList.registerUser("user2", "password2").then(() => {
-  userList.authenticate("user2", "password2").then((authentication) => {
-    console.log(authentication);
-  });
-});
+(async () => {
+  // Register a few users
+  await userList.registerUser("user1", "password1");
+  await userList.registerUser("user2", "password2");
+  await userList.registerUser("user3", "password3");
+
+  // Authenticate
+  console.log(await userList.authenticate("user1", "password1")); // Successful login
+  console.log(await userList.authenticate("user1", "wrongpassword")); // Failed login
+
+  // Find if username exists
+  console.log(userList.usernameExists("user2")); // true
+})();
 
 export {};

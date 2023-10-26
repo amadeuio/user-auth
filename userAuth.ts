@@ -30,22 +30,30 @@ class userAuth {
   }
 
   // Authenticate user
-  // method here ...
+  async authenticate(username: string, password: string): Promise<string> {
+    // Object with user data, or undefined if it doesn't exists
+    const user = this.users.find((user) => user.username === username);
+
+    // If user doesn't exists, return
+    if (!user) return "User not found.";
+
+    const authPass = await this.verifyPassword(password, user.password);
+
+    if (authPass) {
+      return "You can successfully log in.";
+    } else {
+      return "Wrong password.";
+    }
+  }
 }
-
-
 
 // Example usage:
 const userList = new userAuth();
 
-// Register a user and log users list
-userList.registerUser("user1", "password1").then(() => {
-  console.log(userList);
+userList.registerUser("user2", "password2").then(() => {
+  userList.authenticate("user2", "password2").then((authentication) => {
+    console.log(authentication);
+  });
 });
-
-// Verify password example 
-userList.verifyPassword('password1','$2b$10$43Md3Ke5RCnGrdJkjylNBeIA8mq3L/gvhqJgNMu8tiklfffLazi2O').then((result) => {
-  console.log(result);
-})
 
 export {};

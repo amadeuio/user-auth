@@ -35,14 +35,14 @@ class userAuth {
     const user = this.users.find((user) => user.username === username);
 
     // If user doesn't exists, return
-    if (!user) return "User not found.";
+    if (!user) return "Authentication failed. Please check your username and password.";
 
     const passMatch = await this.verifyPassword(password, user.password);
 
     if (passMatch) {
       return "You can successfully log in.";
     } else {
-      return "Wrong password.";
+      return "Authentication failed. Please check your username and password.";
     }
   }
 }

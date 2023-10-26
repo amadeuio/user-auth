@@ -29,7 +29,7 @@ class userAuth {
     return await bcrypt.compare(password, hashedPassword);
   }
 
-  // Authenticate user
+  // Authenticate a user
   async authenticate(username: string, password: string): Promise<string> {
     // Object with user data, or undefined if it doesn't exists
     const user = this.users.find((user) => user.username === username);
@@ -37,9 +37,9 @@ class userAuth {
     // If user doesn't exists, return
     if (!user) return "User not found.";
 
-    const authPass = await this.verifyPassword(password, user.password);
+    const passMatch = await this.verifyPassword(password, user.password);
 
-    if (authPass) {
+    if (passMatch) {
       return "You can successfully log in.";
     } else {
       return "Wrong password.";

@@ -45,6 +45,11 @@ class userAuth {
       return "Authentication failed. Please check your username and password.";
     }
   }
+
+  // Check if a username already exists
+  usernameExists(username: string): boolean {
+    return this.users.some((user) => user.username === username);
+  }
 }
 
 // Example usage:

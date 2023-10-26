@@ -62,6 +62,9 @@ const userList = new userAuth();
   await userList.registerUser("user2", "password2");
   await userList.registerUser("user3", "password3");
 
+  // Print userList
+  console.log(userList);
+
   // Authenticate
   console.log(await userList.authenticate("user1", "password1")); // Successful login
   console.log(await userList.authenticate("user1", "wrongpassword")); // Failed login

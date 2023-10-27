@@ -32,7 +32,7 @@ class userAuth {
   // Authenticate a user
   async authenticate(username: string, password: string): Promise<string> {
     // Object with user data, or undefined if it doesn't exists
-    const user = this.users.find((user) => user.username === username);
+    const user = this.getUserByUsername(username);
 
     // If user doesn't exists, return
     if (!user) return "Authentication failed. Please check your username and password.";

@@ -50,6 +50,11 @@ class userAuth {
   usernameExists(username: string): boolean {
     return this.users.some((user) => user.username === username);
   }
+
+  // Get user by username
+  getUserByUsername(username: string): { username: string; password: string } | undefined {
+    return this.users.find((user) => user.username === username);
+  }
 }
 
 // Example usage:
@@ -71,6 +76,9 @@ const userList = new userAuth();
 
   // Find if username exists
   console.log(userList.usernameExists("user2")); // true
+
+  // Get a user
+  console.log(userList.getUserByUsername("user3"));
 })();
 
 export {};

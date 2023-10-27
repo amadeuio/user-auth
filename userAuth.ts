@@ -18,7 +18,14 @@ class userAuth {
   }
 
   // Register a new user with a hashed password
-  async registerUser(username: string, password: string): Promise<void> {
+  async registerUser(username: string, password: string): Promise<string | void> {
+    // Check if the username already exists
+    const usernameExists = this.usernameExists(username);
+
+    if (usernameExists) {
+      return "Username is already taken. Please choose a different username.";
+    }
+
     const hashedPassword: string = await this.hashPassword(password);
     const user = new User(username, hashedPassword);
     this.users.push(user);
@@ -66,6 +73,9 @@ const userList = new userAuth();
   await userList.registerUser("user1", "password1");
   await userList.registerUser("user2", "password2");
   await userList.registerUser("user3", "password3");
+
+  // Register existing username
+  console.log(await userList.registerUser("user1", "password11")); // Username taken
 
   // Print userList
   console.log(userList);

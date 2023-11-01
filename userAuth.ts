@@ -94,6 +94,10 @@ const userList = new userAuth();
 
   // Get a user
   console.log(userList.getUserByUsername("user3"));
+
+  // Remove user
+  userList.removeUserByUsername("user3");
+  console.log(userList); // Effectively removed user3
 })();
 
 export {};

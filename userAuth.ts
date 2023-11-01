@@ -62,6 +62,11 @@ class userAuth {
   getUserByUsername(username: string): { username: string; password: string } | undefined {
     return this.users.find((user) => user.username === username);
   }
+
+  // Remove a user by username (for account deletion)
+  removeUserByUsername(username: string): void {
+    this.users = this.users.filter((user) => user.username !== username);
+  }
 }
 
 // Example usage:

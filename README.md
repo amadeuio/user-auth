@@ -3,7 +3,7 @@
 
 # User Auth
 
-### About 📖
+### Description 📚
 
 This repository contains a TypeScript class for user authentication that includes secure password hashing and verification using bcrypt.
 
@@ -12,6 +12,28 @@ This repository contains a TypeScript class for user authentication that include
 - Register new users with hashed passwords.
 - Authenticate users securely.
 - Protects against common security vulnerabilities.
+
+### Methods 🔧
+
+#### Users Class
+
+- Constructs user objects with username and password.
+
+#### Tree Class
+
+- `hashPassword()`: Hash a password using bcrypt.
+
+- `registerUser()`: Registers a new user with a hashed password.
+
+- `verifyPassword()`: Checks weather a passowrd coincides with a hashed password.
+
+- `authenticate()`: Finds if a user and password pair is within the users list.
+
+- `usernameExists()`: Checks if a username already exists.
+
+- `getUserByUsername()`: Retreives a user by username.
+
+- `removeUserByUsername()`: Removes a user by username (account deletion).
 
 ### Usage 🖊️
 

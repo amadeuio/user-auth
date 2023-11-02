@@ -3,11 +3,11 @@
 
 # User Auth
 
-## Description 📚
+### Description 📚
 
-This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library for secure password hashing and verificatiopn.
+This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library for secure password hashing and verification.
 
-## Features ✨
+### Features ✨
 
 - User Registration: Users can register by providing a unique username and a password. Passwords are securely hashed using bcrypt before storing them.
 
@@ -17,13 +17,13 @@ This repo features a User authentication class implemented in TypeScript. It pro
 
 - User Management: You can retrieve user data by username and remove users by their username (for account deletion).
 
-## Methods 🔧
+### Methods 🔧
 
-### User Class
+#### User Class
 
 - Constructs user objects with username and password.
 
-### UserAuth Class
+#### UserAuth Class
 
 - `hashPassword()`: Hash a password using bcrypt.
 
@@ -39,14 +39,14 @@ This repo features a User authentication class implemented in TypeScript. It pro
 
 - `removeUserByUsername()`: Removes a user by username (account deletion).
 
-## Getting Started 🏁
+### Getting Started 🏁
 
-### Prerequisites
+#### Prerequisites
 
 - Node.js installed on your system
 - npm (Node Package Manager) installed on your system
 
-### Installation
+#### Installation
 
 1. Clone the repository to your local machine:
 
@@ -66,4 +66,4 @@ This repo features a User authentication class implemented in TypeScript. It pro
    npm install
    ```
 
-## Usage 🖊️
+### Usage 🖊️

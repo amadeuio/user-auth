@@ -19,11 +19,11 @@ This repo features a User authentication class implemented in TypeScript. It pro
 
 ## Methods 🔧
 
-### Users Class
+### User Class
 
 - Constructs user objects with username and password.
 
-### Tree Class
+### UserAuth Class
 
 - `hashPassword()`: Hash a password using bcrypt.
 

@@ -1,7 +1,7 @@
 ![languages](https://img.shields.io/badge/languages-ts-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
-# User Auth
+# User Auth 📝
 
 ### Description 📚
 
@@ -9,13 +9,13 @@ This repo features a User authentication class implemented in TypeScript. It pro
 
 ### Features ✨
 
-- User Registration: Users can register by providing a unique username and a password. Passwords are securely hashed using bcrypt before storing them.
+- **User Registration**: Users can register by providing a unique username and a password. Passwords are securely hashed using bcrypt before storing them.
 
-- Authentication: Registered users can log in by providing their username and password. The app verifies the password against the stored hashed password to authenticate the user.
+- **Authentication**: Registered users can log in by providing their username and password. The app verifies the password against the stored hashed password to authenticate the user.
 
-- Username Existence Check: You can check if a username is already taken before attempting to register a new user.
+- **Username Existence Check**: You can check if a username is already taken before attempting to register a new user.
 
-- User Management: You can retrieve user data by username and remove users by their username (for account deletion).
+- **User Management**: You can retrieve user data by username and remove users by their username (for account deletion).
 
 ### Methods 🔧
 

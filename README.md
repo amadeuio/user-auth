@@ -3,23 +3,27 @@
 
 # User Auth
 
-### Description 📚
+## Description 📚
 
-This repository contains a TypeScript class for user authentication that includes secure password hashing and verification using bcrypt.
+This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library for secure password hashing and verificatiopn.
 
-### Features 📚
+## Features ✨
 
-- Register new users with hashed passwords.
-- Authenticate users securely.
-- Protects against common security vulnerabilities.
+- User Registration: Users can register by providing a unique username and a password. Passwords are securely hashed using bcrypt before storing them.
 
-### Methods 🔧
+- Authentication: Registered users can log in by providing their username and password. The app verifies the password against the stored hashed password to authenticate the user.
 
-#### Users Class
+- Username Existence Check: You can check if a username is already taken before attempting to register a new user.
+
+- User Management: You can retrieve user data by username and remove users by their username (for account deletion).
+
+## Methods 🔧
+
+### Users Class
 
 - Constructs user objects with username and password.
 
-#### Tree Class
+### Tree Class
 
 - `hashPassword()`: Hash a password using bcrypt.
 
@@ -35,10 +39,31 @@ This repository contains a TypeScript class for user authentication that include
 
 - `removeUserByUsername()`: Removes a user by username (account deletion).
 
-### Usage 🖊️
+## Getting Started 🏁
 
-1. Install bcrypt (specified in package.json):
+### Prerequisites
 
-   ```bash
+- Node.js installed on your system
+- npm (Node Package Manager) installed on your system
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```sh
+   git clone git@github.com:nightrunner4/user-auth.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd user-auth
+   ```
+
+3. Install the project dependencies (in this case, bcrypt):
+
+   ```sh
    npm install
    ```
+
+## Usage 🖊️

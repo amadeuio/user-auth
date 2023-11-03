@@ -7,9 +7,13 @@
 
 This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library for secure password hashing and verification.
 
+The app also demonstrates the use of async functions, as the bcrypt library requires some processing time.
+
 ### Features ✨
 
 - **User Registration**: Users can register by providing a unique username and a password. Passwords are securely hashed using bcrypt before storing them.
+
+- **Unique Usernames**: Before registering, the app makes sure the username isn't already taken.
 
 - **Authentication**: Registered users can log in by providing their username and password. The app verifies the password against the stored hashed password to authenticate the user.
 

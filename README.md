@@ -72,21 +72,25 @@ The app also demonstrates the use of async functions, as the bcrypt library requ
 
 ### Usage 🖊️
 
-1. Create a users list, this is where we will store all our users data base
+**1. Create a users list**
+
+This is where we will store all our users data base.
 
 ```typescript
 const userList = new userAuth();
 ```
 
-2. Since most of the methods we are going to use are asynchronous, we will call them inside an `async` IIFE (Immediately Invoked Function Expression). This is a handy way to call `async` functions.
+**2. Create an IIFE**
+
+Since most of the methods we are going to use are asynchronous, we will call them inside an `async` IIFE (Immediately Invoked Function Expression). This is a handy way to call `async` functions, and it allows us to `await` each asynchronous operation, ensuring that one completes before moving on to the next.
 
 ```typescript
 (async () => {
-  // Methods here ...
+  // Methods will be called here ...
 })();
 ```
 
-3. Register a few users
+**3. Register a few users**
 
 ```typescript
 await userList.registerUser("user1", "password1");

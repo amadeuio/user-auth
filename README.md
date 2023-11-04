@@ -52,23 +52,23 @@ The app also demonstrates the use of async functions, as the bcrypt library requ
 
 #### Installation
 
-1. Clone the repository to your local machine:
+**1. Clone the repository to your local machine:**
 
-   ```sh
-   git clone git@github.com:nightrunner4/user-auth.git
-   ```
+```sh
+git clone git@github.com:nightrunner4/user-auth.git
+```
 
-2. Navigate to the project directory:
+**2. Navigate to the project directory:**
 
-   ```sh
-   cd user-auth
-   ```
+```sh
+cd user-auth
+```
 
-3. Install the project dependencies (in this case, bcrypt):
+**3. Install the project dependencies** (in this case, bcrypt):
 
-   ```sh
-   npm install
-   ```
+```sh
+npm install
+```
 
 ### Usage 🖊️
 

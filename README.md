@@ -97,3 +97,11 @@ await userList.registerUser("user1", "password1");
 await userList.registerUser("user2", "password2");
 await userList.registerUser("user3", "password3");
 ```
+
+**4. Register an existing username**
+
+The method will return a message indicating that the username is already taken, and the registration process will not proceed.
+
+```typescript
+await userList.registerUser("user1", "randompass"); // Username taken
+```

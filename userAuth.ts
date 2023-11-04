@@ -80,7 +80,7 @@ const userList = new userAuth();
   await userList.registerUser("user3", "password3");
 
   // Register existing username
-  console.log(await userList.registerUser("user1", "password11")); // Username taken
+  console.log(await userList.registerUser("user1", "randompass")); // Username taken
 
   // Print userList
   console.log(userList);

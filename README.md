@@ -105,3 +105,9 @@ The method will return a message indicating that the username is already taken, 
 ```typescript
 await userList.registerUser("user1", "randompass"); // Username taken
 ```
+
+**5. Let's `console.log` our usersList**
+
+```typescript
+console.log(userList);
+```

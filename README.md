@@ -111,3 +111,24 @@ await userList.registerUser("user1", "randompass"); // Username taken
 ```typescript
 console.log(userList);
 ```
+
+```typescript
+userAuth {
+  users: [
+    User {
+      username: 'user1',
+      password: '$2b$10$bVenYXyDoTsfu5ps.ApAvehKen8xl3TF5XNGSgAs6vhHcTEoeShfa'
+    },
+    User {
+      username: 'user2',
+      password: '$2b$10$wHNvUkQgcJpfkD6.8AJeweTCNAQMVtE8m5NWBUneYlZSvbEd48OBO'
+    },
+    User {
+      username: 'user3',
+      password: '$2b$10$E3CQhxdTPNIhoECi9ftYaO1LQFkXLcicWxnAmZudwQOBiDSgrCNBO'
+    }
+  ]
+}
+```
+
+Each user is an object contained in the users list. As you can see, the stored passwords are hashed.

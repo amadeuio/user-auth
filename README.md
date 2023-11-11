@@ -5,9 +5,7 @@
 
 ### Description 📚
 
-This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library for secure password hashing and verification.
-
-The app also demonstrates the use of async functions, as the bcrypt library requires some processing time.
+This repo features a User authentication class implemented in TypeScript. It provides user registration, authentication, and other user management features using the bcrypt library, which provides secure password hashing and verification. The repo also demonstrates the use of async functions, as the bcrypt library requires processing time.
 
 ### Features ✨
 

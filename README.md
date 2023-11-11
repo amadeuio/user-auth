@@ -138,3 +138,9 @@ Each user is an object contained in the users list. As you can see, the stored p
 ```typescript
 await userList.authenticate("user1", "password1"); // Successful login
 ```
+
+**7. Authenticate a user with a wrong password**
+
+```typescript
+await userList.authenticate("user1", "wrongpassword")); // Failed login
+```

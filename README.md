@@ -142,5 +142,5 @@ await userList.authenticate("user1", "password1"); // Successful login
 **7. Authenticate a user with a wrong password**
 
 ```typescript
-await userList.authenticate("user1", "wrongpassword")); // Failed login
+await userList.authenticate("user1", "wrongpassword"); // Failed login
 ```

@@ -64,7 +64,7 @@ git clone git@github.com:nightrunner4/user-auth.git
 cd user-auth
 ```
 
-3. Install the project dependencies (in this case, bcrypt):
+3. Install the project dependencies (in this case, bcrypt, as specified in [Package.json](./package.json)):
 
 ```sh
 npm install

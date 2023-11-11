@@ -132,3 +132,9 @@ userAuth {
 ```
 
 Each user is an object contained in the users list. As you can see, the stored passwords are hashed.
+
+**6. Authenticate a user**
+
+```typescript
+await userList.authenticate("user1", "password1"); // Successful login
+```

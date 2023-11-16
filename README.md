@@ -142,3 +142,9 @@ await userList.authenticate("user1", "password1"); // Successful login
 ```typescript
 await userList.authenticate("user1", "wrongpassword"); // Failed login
 ```
+
+**8. Find if a username exists**
+
+```typescript
+userList.usernameExists("user2"); // true
+```

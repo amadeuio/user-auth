@@ -154,3 +154,9 @@ userList.usernameExists("user2"); // true
 ```typescript
 userList.getUserByUsername("user3");
 ```
+
+**10. Remove a user**
+
+```typescript
+userList.removeUserByUsername("user3"); // Effectively removed user3
+```

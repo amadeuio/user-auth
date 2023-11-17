@@ -155,6 +155,13 @@ userList.usernameExists("user2"); // true
 userList.getUserByUsername("user3");
 ```
 
+```typescript
+User {
+  username: 'user3',
+  password: '$2b$10$bRyXZ7RK73lF3PDl7.d6bOlnRlyFF3yf3hIst.Zg4HppokQ96m7Ki'
+}
+```
+
 **10. Remove a user**
 
 ```typescript

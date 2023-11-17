@@ -158,5 +158,5 @@ userList.getUserByUsername("user3");
 **10. Remove a user**
 
 ```typescript
-userList.removeUserByUsername("user3"); // Effectively removed user3
+userList.removeUserByUsername("user3"); // Removed user3
 ```

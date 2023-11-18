@@ -168,7 +168,7 @@ User {
 userList.removeUserByUsername("user3");
 ```
 
-We can check that `user3` was removed by `console.log(userList)`:
+We can verify that `user3` was removed with `console.log(userList)`:
 
 ```typescript
 userAuth {

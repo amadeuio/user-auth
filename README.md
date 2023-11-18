@@ -155,6 +155,8 @@ userList.usernameExists("user2"); // true
 userList.getUserByUsername("user3");
 ```
 
+The method will return the user object or `undefined` if it doesn't exist in the list
+
 ```typescript
 User {
   username: 'user3',
@@ -168,7 +170,7 @@ User {
 userList.removeUserByUsername("user3");
 ```
 
-We can verify that `user3` was removed with `console.log(userList)`:
+We can verify that `user3` was removed by `console.log(userList)`
 
 ```typescript
 userAuth {

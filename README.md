@@ -129,7 +129,7 @@ userAuth {
 }
 ```
 
-Each user is an object contained in the users list. As you can see, the stored passwords are hashed.
+Each user is an object contained in the users list. As you can see, the stored passwords are hashed. This is good, because in protects the users in case of a data breach. Even if an attacker obtains the hashed passwords, they would need significant computational resources and time to attempt to reverse the hashes and obtain the original passwords.
 
 **6. Authenticate a user**
 

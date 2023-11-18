@@ -167,3 +167,18 @@ User {
 ```typescript
 userList.removeUserByUsername("user3"); // Removed user3
 ```
+
+```typescript
+userAuth {
+  users: [
+    User {
+      username: 'user1',
+      password: '$2b$10$S1tNMxIeTupCSU1ICQPJG./DpPklSTxkGjBQvAsK2jVJVnbQdCH6y'
+    },
+    User {
+      username: 'user2',
+      password: '$2b$10$9LmQDXi9N4t62YLbXqbaaOqbc/F1BeyRXmdQmxXtp0vOFKGL80AtW'
+    }
+  ]
+}
+```

@@ -165,8 +165,10 @@ User {
 **10. Remove a user**
 
 ```typescript
-userList.removeUserByUsername("user3"); // Removed user3
+userList.removeUserByUsername("user3");
 ```
+
+We can check that `user3` was removed by `console.log(userList)`:
 
 ```typescript
 userAuth {

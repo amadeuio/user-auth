@@ -53,7 +53,7 @@ This repo features a User authentication class implemented in TypeScript. It pro
 1. Clone the repository to your local machine:
 
 ```sh
-git clone git@github.com:nightrunner4/user-auth.git
+git clone git@github.com:amadeuio/user-auth.git
 ```
 
 2. Navigate to the project directory:

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nightrunner4/user-auth.git"
+    "url": "git+https://github.com/amadeuio/user-auth.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nightrunner4/user-auth/issues"
+    "url": "https://github.com/amadeuio/user-auth/issues"
   },
-  "homepage": "https://github.com/nightrunner4/user-auth#readme",
+  "homepage": "https://github.com/amadeuio/user-auth#readme",
   "dependencies": {
     "bcrypt": "^5.1.1"
   },
